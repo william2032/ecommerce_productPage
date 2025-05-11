@@ -6,7 +6,8 @@
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
     <title>E-commerce product page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,8 +16,12 @@
 <navbar class="nav-container">
     <div class="nav-contents">
         <div class="logo">
-            <img src="./images/logo.svg" alt="logo">
+            <div>
+                <img class="menu-icon" src="images/icon-menu.svg" alt="icon-menu">
+            </div>
+            <div><img id="logo" src="./images/logo.svg" alt="logo"></div>
         </div>
+
         <div class="nav-links">
             <ul>
                 <li><a href="#">Collections</a></li>
@@ -45,7 +50,7 @@
         </div>
         <div class="small-images">
             <div class="small-image1">
-                <img  class="active" src="./images/hero.png" alt="product-image">
+                <img class="active" src="./images/hero.png" alt="product-image">
             </div>
             <div class="small-image2">
                 <img src="./images/image-product-2-thumbnail.jpg" alt="product-image">
@@ -70,9 +75,9 @@
         </div>
         <div class="product-price">
             <div class="price">
-                <span>$125.00</span>
+                <p>$125.00</p>
             </div>
-                <span class="discount"> 50%</span>
+            <span class="discount"> 50%</span>
         </div>
         <div class="previous-price">
             <span>$250.00</span>
@@ -88,7 +93,7 @@
                 </button>
             </div>
             <div class="cart-button">
-                    <img src="./images/icon-cart.svg" alt="cart">
+                <img src="./images/icon-cart.svg" alt="cart">
                 <span>Add to cart</span>
             </div>
         </div>
